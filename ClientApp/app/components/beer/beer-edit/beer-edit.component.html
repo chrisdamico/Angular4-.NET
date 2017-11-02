@@ -1,0 +1,93 @@
+﻿<div class="row">
+    <div class="col-xs-12">
+        <form [formGroup]="beerForm" (ngSubmit)="onSubmit()">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text"
+                               id="name"
+                               formControlName="name"
+                               class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <input type="text"
+                               id="description"
+                               formControlName="description"
+                               class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="form-group">
+                        <label for="style">Style</label>
+                        <input type="text"
+                               id="style"
+                               formControlName="style"
+                               class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="form-group">
+                        <label for="abv">ABV</label>
+                        <input type="text"
+                               id="abv"
+                               formControlName="abv"
+                               class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="form-group">
+                        <label for="ibu">IBU</label>
+                        <input type="text"
+                               id="ibu"
+                               formControlName="ibu"
+                               class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="form-group">
+                        <label for="rating">Rating</label>
+                        <input type="text"
+                               id="rating"
+                               formControlName="rating"
+                               class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="form-group">
+                        <label for="brewery">Brewed By</label>
+                        <input type="text"
+                               id="brewery"
+                               formControlName="brewery"
+                               class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <button type="submit"
+                            class="btn"
+                            [disabled]="!beerForm.valid">
+                        Save
+                    </button>
+                    <button type="button" class="btn" (click)="onCancel()">Cancel</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

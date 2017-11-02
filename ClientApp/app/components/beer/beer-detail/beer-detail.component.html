@@ -1,0 +1,42 @@
+﻿<div class="row">
+        <div class="col-xs-12">
+            <h3>{{beer.name}}</h3>
+        </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <b>Brewed By:</b> {{beer.brewery}}
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <b>Style:</b> {{beer.style}}
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <b>Rating:</b> {{beer.rating}}
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-12">
+        <b>Tasting Notes:</b> {{beer.description}}
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-1"><b>ABV</b></div>
+    <div class="col-xs-1"><b>IBU</b></div>
+</div>
+<div class="row">
+    <div class="col-xs-1">{{beer.abv}}%</div>
+    <div class="col-xs-1">{{beer.ibu}}</div>
+</div>
+<hr/>
+<div class="row">
+    <div class="col-xs-12">
+        <div class="pull-right">
+            <a (click)="onClickEdit()" style="cursor: pointer; color: darkslategrey;">Edit</a>
+            <a (click)="onClickDelete()" style="cursor: pointer;  color: darkslategrey;">Delete</a>
+        </div>
+    </div>
+</div>

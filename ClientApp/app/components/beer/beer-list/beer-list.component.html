@@ -1,0 +1,11 @@
+﻿<div class="row">
+        <beer-item *ngFor="let beer of beers; let i = index" [beer]="beer" [index]="i"></beer-item>
+ </div>
+<hr />
+<div class="row">
+    <div class="col-xs-12">
+        <div class="pull-right">
+            <button class="btn" (click)="onCreateBeer()">Add Beer</button>
+        </div>
+    </div>
+</div>
